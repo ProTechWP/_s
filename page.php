@@ -13,7 +13,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-	<?php tha_contnet_top(); ?>
+	<?php tha_content_top(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
