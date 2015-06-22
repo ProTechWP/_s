@@ -74,6 +74,9 @@ function _s_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	// Set up Theme Hook Alliance
+	include( 'inc/tha-theme-hooks.php');
 }
 endif; // _s_setup
 add_action( 'after_setup_theme', '_s_setup' );

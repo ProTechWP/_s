@@ -14,12 +14,14 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+	<?php tha_content_top(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+				<?php tha_entry_before(); ?>
 
 				<?php
 
@@ -30,18 +32,22 @@ get_header(); ?>
 					 */
 					get_template_part( 'template-parts/content', get_post_format() );
 				?>
+				<?php tha_entry_after(); ?>
 
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
+			<?php tha_comments_before(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
+			<?php tha_comments_after(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+	<?php tha_content_bottom(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
