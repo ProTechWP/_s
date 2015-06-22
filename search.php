@@ -29,7 +29,7 @@ get_header(); ?>
 				 */
 				get_template_part( 'template-parts/content', 'search' );
 				?>
-				<?php tha_entry_after ?>
+				<?php tha_entry_after() ?>
 
 			<?php endwhile; ?>
 
