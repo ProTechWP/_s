@@ -43,6 +43,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
 
 /*--------------------------------------------------------------
 # Bourbon, Neat & Refills
@@ -52,11 +56,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "base/base";
 @import "neat/neat";
 
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-@import "normalize";
 
 
 @import "layout";
 
+@import "header";
+
+@import "modules/accessibility";

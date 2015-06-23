@@ -108,6 +108,14 @@ function _s_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+
+	register_sidebar( array(
+		'name'			=> esc_html__( 'Header Right', '_s' ),
+		'id'			=> 'header-right',
+		'before_widget'	=> '<aside class="widget">',
+		'after_Widget'	=> '</aside>',
+		'description'	=> 'Widget area for the right hand side of the header',
+	) );
 }
 add_action( 'widgets_init', '_s_widgets_init' );
 

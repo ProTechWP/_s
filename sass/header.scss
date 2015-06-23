@@ -1,0 +1,12 @@
+header {
+	.site-branding {
+		@include span-columns(4);
+	}
+	.header-right {
+		@include span-columns(8);
+		@include omega;
+	}
+	#site-navigation {
+		@include span-columns(12);
+	}
+}
