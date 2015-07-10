@@ -1,4 +1,5 @@
-header {
+.site-header {
+	background: $header-background;
 	.site-branding {
 		@include span-columns(4);
 	}
