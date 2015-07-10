@@ -42,14 +42,14 @@
 			?>
 		</.div><!-- .wrap -->
 
+		<?php tha_header_bottom(); ?>
+	</header><!-- #masthead -->
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<div class="wrap">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_s' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</div><!-- .wrap -->
 		</nav><!-- #site-navigation -->
-		<?php tha_header_bottom(); ?>
-	</header><!-- #masthead -->
 	<?php tha_header_after(); ?>
 
 	<?php tha_content_before(); ?>
