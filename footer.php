@@ -12,6 +12,17 @@
 	</div><!-- .wrap -->
 	</div><!-- #content -->
 	<?php tha_content_after(); ?>
+	<?php if( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2') || is_active_sidebar( 'footer-3') ) {
+		?>
+		
+		<div class="footer-widgets">
+			<div class="wrap">
+				<?php dynamic_sidebar( 'footer-1' ); ?>
+				<?php dynamic_sidebar( 'footer-2' ); ?>
+				<?php dynamic_sidebar( 'footer-3' ); ?>
+			</div><!-- .wrap -->
+		</div><!-- .footer-widgets -->
+	<?php } ?>
 
 	<?php tha_footer_before(); ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">

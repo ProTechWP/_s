@@ -1,0 +1,10 @@
+.footer-widgets {
+	background: $footer-background;
+	.widget {
+		@include span-columns(4);
+	}
+}
+
+.site-info {
+	text-align: center;
+}

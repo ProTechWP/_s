@@ -429,7 +429,7 @@ html {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 74.4105871005%; }
+  width: 65.8807828007%; }
   #main:last-child {
     margin-right: 0; }
 
@@ -437,32 +437,34 @@ html {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 23.2317613015%; }
+  width: 31.7615656014%; }
   #secondary:last-child {
     margin-right: 0; }
 
-header .site-branding {
-  float: left;
-  display: block;
-  margin-right: 2.3576515979%;
-  width: 31.7615656014%; }
-  header .site-branding:last-child {
+.site-header {
+  background: #ddd; }
+  .site-header .site-branding {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 31.7615656014%; }
+    .site-header .site-branding:last-child {
+      margin-right: 0; }
+  .site-header .header-right {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 65.8807828007%;
     margin-right: 0; }
-header .header-right {
-  float: left;
-  display: block;
-  margin-right: 2.3576515979%;
-  width: 65.8807828007%;
-  margin-right: 0; }
-  header .header-right:last-child {
-    margin-right: 0; }
-header #site-navigation {
-  float: left;
-  display: block;
-  margin-right: 2.3576515979%;
-  width: 100%; }
-  header #site-navigation:last-child {
-    margin-right: 0; }
+    .site-header .header-right:last-child {
+      margin-right: 0; }
+  .site-header #site-navigation {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%; }
+    .site-header #site-navigation:last-child {
+      margin-right: 0; }
 
 .menu-toggle {
   display: none; }
@@ -474,6 +476,24 @@ header #site-navigation {
 
   .main-navigation ul {
     display: none; } }
+#secondary .widget {
+  border: 1px solid #ddd;
+  margin-bottom: 1.875rem;
+  padding: 1.875rem; }
+
+.footer-widgets {
+  background: #ddd; }
+  .footer-widgets .widget {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 31.7615656014%; }
+    .footer-widgets .widget:last-child {
+      margin-right: 0; }
+
+.site-info {
+  text-align: center; }
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);

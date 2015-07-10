@@ -3,9 +3,9 @@
 }
 
 #main {
-	@include span-columns(9);
+	@include span-columns(8);
 }
 
 #secondary {
-	@include span-columns(3);
+	@include span-columns(4);
 }
