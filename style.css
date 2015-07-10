@@ -464,6 +464,16 @@ header #site-navigation {
   header #site-navigation:last-child {
     margin-right: 0; }
 
+.menu-toggle {
+  display: none; }
+
+@media screen and (max-width: 48em) {
+  .menu-toggle,
+  .main-navigation.toggled ul {
+    display: block; }
+
+  .main-navigation ul {
+    display: none; } }
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
