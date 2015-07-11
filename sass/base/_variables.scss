@@ -18,8 +18,13 @@ $base-z-index: 0;
 // Colors
 $blue: #477dca;
 $dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
+$medium-gray: #e0e0e0;
+$light-gray: #f5f5f5;
+
+// Element Colors
+
+$header-background: $light-gray;
+$footer-background: $light-gray;
 
 // Font Colors
 $base-background-color: #fff;

@@ -1,0 +1,15 @@
+.site-header {
+	background: $header-background;
+	border-bottom: 1px solid $medium-gray;
+	.site-branding {
+		@include span-columns(4);
+	}
+	.header-right {
+		@include span-columns(8);
+		@include omega;
+	}
+	#site-navigation {
+		@include span-columns(12);
+		border-bottom: 1px solid $medium-gray;
+	}
+}

@@ -1,0 +1,12 @@
+.wrap {
+	@include outer-container;
+}
+
+#main {
+	@include span-columns(8);
+	padding-right: 30px;
+}
+
+#secondary {
+	@include span-columns(4);
+}

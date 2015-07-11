@@ -105,9 +105,30 @@ function _s_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
+
+	register_sidebar( array(
+		'name'			=> esc_html__( 'Header Right', '_s' ),
+		'id'			=> 'header-right',
+		'before_widget'	=> '<aside class="widget">',
+		'after_Widget'	=> '</aside>',
+		'description'	=> 'Widget area for the right hand side of the header',
+	) );
+
+	// Register Footer Sidebars
+
+	register_sidebars( 3,  array(
+		'name'			=> esc_html( 'Footer %d' ),
+		'id'			=> 'footer',
+		'description'	=> 'footer widget area',
+		'class'			=> 'footer %d',
+		'before_widget'	=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'	=> '</div>',
+		'before_title'	=> '<h3 class="widgettitle">',
+		'after_title'	=> '</h3>',
+		) );
 }
 add_action( 'widgets_init', '_s_widgets_init' );
 
@@ -118,6 +139,8 @@ function _s_scripts() {
 	wp_enqueue_style( '_s-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+
+	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
 
 	wp_enqueue_script( '_s-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
