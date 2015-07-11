@@ -62,9 +62,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @import "header";
 @import "navigation";
+@import "entry-content";
 
 @import "sidebar-primary";
 
 @import "footer";
+@import "comments";
 
 @import "modules/accessibility";

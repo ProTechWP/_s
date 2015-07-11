@@ -1,5 +1,8 @@
 .footer-widgets {
 	background: $footer-background;
+	border-top: 1px solid $medium-gray;
+	border-bottom: 1px solid $medium-gray;
+	margin-top: 30px;
 	.widget {
 		padding: 30px;
 		@include span-columns(4);

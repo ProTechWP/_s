@@ -1,5 +1,6 @@
 .site-header {
 	background: $header-background;
+	border-bottom: 1px solid $medium-gray;
 	.site-branding {
 		@include span-columns(4);
 	}
@@ -9,5 +10,6 @@
 	}
 	#site-navigation {
 		@include span-columns(12);
+		border-bottom: 1px solid $medium-gray;
 	}
 }
